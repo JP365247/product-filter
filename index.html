@@ -1,0 +1,35 @@
+<!--Pseduo Code-->
+<!--This is from the tutorial https://youtu.be/hEs3IL6UyvE?si=WZjTHYfPtn3D86Ib-->
+
+<!--Search bar at the top-->
+<!--Underneath, there are filter buttons. 5 in total-->
+<!--Images of the items that people can purchase. Each one has the 1. name of the item; 2. cost of the item; 3. Image of the items in 3 columns-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter and Search | YouTube</title>
+</head>
+<body>
+    <section id="searchContainer">
+        <form action="/search" method="GET">
+            <input type="text" placeholder="Search your product name here" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <section class="btnContainer">
+        <button class="allBtn active" onclick="filterSelection('all')">All</button>
+        <button class="topBtn" onclick="filterSelection('topWear')">Top wear</button>
+        <button class="bottomBtn" onclick="filterSelection('bottomWear')">Bottom Wear</button>
+        <button class="shoeBtn" onclick="filterSelection('shoe')">Shoes</button>
+        <button class="accessBtn" onclick="filterSelection('accessory')">Accessories</button>
+    </section>
+    <section class="productContainer">
+        <ul class="productList">
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>
