@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightsteelblue;
+}
+
+#searchContainer{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#searchContainer input{
+    width: 18.75rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#searchContainer button{
+    margin-left: 1.5rem;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchContainer button:hover{
+    background-color: lightblue;
+    color: white;
+    border: none;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.btnContainer button{
+    margin: 0.2rem;
+    padding: 0.6rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: red;
+    background-color: white;
+    border-color: blue;
+    cursor: pointer;
+}
+
+.btnContainer active::before{
+    background-color: red;
+}
