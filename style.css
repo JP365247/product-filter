@@ -56,3 +56,32 @@ body{
 .btnContainer active::before{
     background-color: red;
 }
+
+.productContainer {
+    width: 90%;
+    border: 2px solid red;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 3px solid blue;
+}
+
+.productList li {
+    flex: 1 0 20%; /* Adjust for spacing */
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.productList li img {
+    width: 100%; /* Fill the li */
+    height: auto;
+    border: 2px solid green;
+}
